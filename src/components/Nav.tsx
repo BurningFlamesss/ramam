@@ -13,7 +13,7 @@ function Nav() {
 			<div className="menu-toggle-btn">
 				<ul className="menu-toggle-btn-wrapper">
 					<li className="menu open-label">Menu</li>
-					<li className="menu open-label">Close</li>
+					<li className="menu close-label">Close</li>
 				</ul>
 			</div>
 		</nav>

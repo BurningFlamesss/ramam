@@ -1,7 +1,7 @@
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-
+import menuCss from "../styles/menu.css?url"
 import appCss from '../styles.css?url'
 
 export const Route = createRootRoute({
@@ -22,6 +22,10 @@ export const Route = createRootRoute({
       {
         rel: 'stylesheet',
         href: appCss,
+      },
+      {
+        rel: 'stylesheet',
+        href: menuCss,
       },
     ],
   }),

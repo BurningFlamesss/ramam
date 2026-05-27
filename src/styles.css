@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
 /* Supply Mono */
 @font-face {
   font-family: 'Supply Mono';
@@ -178,25 +185,6 @@
   src: url('/fonts/rader/PPRader-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
-}
-
-@import 'tailwindcss';
-@plugin '@tailwindcss/typography';
-
-@import 'tw-animate-css';
-
-@custom-variant dark (&:is(.dark *));
-
-@font-face {
-  font-family: 'Supply Mono';
-  src: url('/fonts/supply-mono/PPSupplyMono-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Supply Mono';
-  src: url('/fonts/supply-mono/PPSupplyMono-Bold.ttf') format('truetype');
-  font-weight: 700;
 }
 
 :root {
