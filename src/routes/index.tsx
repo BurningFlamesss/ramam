@@ -1,112 +1,22 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import Hero from "#/components/Hero.tsx";
+import HeroImageHolder from "#/components/HeroImageHolder.tsx";
+import Nav from "#/components/Nav.tsx";
+import NavOverlay from "#/components/NavOverlay.tsx";
+import Transition from "#/components/Transition.tsx";
 
 export const Route = createFileRoute("/")({ component: Home });
 
 function Home() {
 	return (
 		<div>
-			<div className="transition">
-				<div className="transition-overlay overlay-1"></div>
-				<div className="transition-overlay overlay-2"></div>
-				<div className="transition-overlay overlay-3"></div>
-				<div className="transition-overlay overlay-4"></div>
-				<div className="transition-overlay overlay-5"></div>
-			</div>
+			<Transition />
 
 			<div className="page home-page">
-				<nav>
-					<div className="logo">
-						<div className="logo-container">
-							<p className="menu">
-								<Link to="/">R + P + A</Link>
-							</p>
-						</div>
-					</div>
-          <div className="menu-toggle-btn">
-            <ul className="menu-toggle-btn-wrapper">
-              <li className="menu open-label">Menu</li>
-              <li className="menu open-label">Close</li>
-            </ul>
-          </div>
-				</nav>
-
-        <div className="nav-overlay">
-          <ul className="nav-items">
-            <li className="nav-item active">
-              <p>
-                <Link to="/">Home</Link>
-              </p>
-            </li>
-            <li className="nav-item">
-              <p>
-                <Link to="/">Contact</Link>
-              </p>
-            </li>
-          </ul>
-
-          <ul className="nav-footer">
-            <li className="nav-footer-item">
-              <div className="nav-footer-item-header">
-                <p className="menu">
-                  Find Me
-                </p>
-              </div>
-              <div className="nav-footer-item-links">
-                <p className="menu">
-                  <Link to="/" target="_blank">Facebook</Link>
-                </p>
-              </div>
-            </li>
-            <li className="nav-footer-item">
-              <div className="nav-footer-item-links">
-                <p className="menu">
-                </p>
-              </div>
-            </li>
-            <li className="nav-footer-item">
-              <div className="nav-footer item-header">
-                <p className="menu">
-                  Get in Touch
-                </p>
-              </div>
-              <div className="nav-footer-item-links">
-                <p className="menu">
-                  <Link to="/" target="_blank">rpa@gmail.com</Link>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <section className="hero">
-          <header className="hero-header-wrapper">
-            <div className="hero-header hero-header-1">
-              <h1>Ram</h1>
-            </div>
-            <div className="hero-header hero-header-2">
-              <h1>Prasad</h1>
-            </div>
-          </header>
-          <footer className="hero-footer">
-            <div className="hero-footer-symbols">
-              <img src="" alt="" />
-            </div>
-            <div className="hero-footer-scroll-down">
-              <p className="menu">
-                <Link to="/" target="_blank" className="resume-link">Get {"//"} Resume</Link>
-              </p>
-            </div>
-            <div className="hero-footer-tags">
-              <p className="menu">Light Mode: ON</p>
-            </div>
-          </footer>
-        </section>
-
-        <section className="hero-img-holder">
-          <div className="hero-img">
-            <img src="" alt="" />
-          </div>
-        </section>
+				<Nav />
+				<NavOverlay />
+				<Hero />
+				<HeroImageHolder />
 			</div>
 		</div>
 	);
