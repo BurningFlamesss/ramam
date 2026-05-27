@@ -1,0 +1,16 @@
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100svh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.hero .hero-header h1 {
+    font-size: 18vw;
+    line-height: 0.9;
+}
