@@ -5,7 +5,9 @@ import Hero from "#/components/Hero.tsx";
 import HeroImageHolder from "#/components/HeroImageHolder.tsx";
 import Nav from "#/components/Nav.tsx";
 import NavOverlay from "#/components/NavOverlay.tsx";
+import ServiceHeader from "#/components/ServiceHeader.tsx";
 import Transition from "#/components/Transition.tsx";
+import Services from "#/components/Services.tsx";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -21,6 +23,8 @@ function Home() {
 				<HeroImageHolder />
 				<About />
 				<Featured />
+				<ServiceHeader />
+				<Services />
 			</div>
 		</div>
 	);
