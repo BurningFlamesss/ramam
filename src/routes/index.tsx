@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import About from "#/components/About.tsx";
+import Featured from "#/components/Featured.tsx";
 import Hero from "#/components/Hero.tsx";
 import HeroImageHolder from "#/components/HeroImageHolder.tsx";
 import Nav from "#/components/Nav.tsx";
@@ -19,6 +20,7 @@ function Home() {
 				<Hero />
 				<HeroImageHolder />
 				<About />
+				<Featured />
 			</div>
 		</div>
 	);

@@ -393,7 +393,7 @@ a {
   color: var(--foreground);
 }
 
-p {
+p, p.short-info {
   font-family: "Formula Narrow";
   font-size: 1.25rem;
   font-weight: 600;
