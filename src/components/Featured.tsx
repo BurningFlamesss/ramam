@@ -35,7 +35,7 @@ function Featured() {
 				))}
 			</ul>
 
-            <div className="featured-work-indicator">            </div>
+            <div className="featured-work-indicator"></div>
             <ul className="featured-work-footer">
                 <li className="menu">Projects [67]</li>
                 <li className="menu">{"//////////////////"}</li>

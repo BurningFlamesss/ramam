@@ -11,21 +11,21 @@ function Hero() {
 					<h1>Prasad</h1>
 				</div>
 			</header>
-			<footer className="hero-footer">
-				<div className="hero-footer-symbols">
+			<ul className="hero-footer">
+				<li className="hero-footer-symbols">
 					<img src="" alt="" />
-				</div>
-				<div className="hero-footer-scroll-down">
+				</li>
+				<li className="hero-footer-scroll-down">
 					<p className="menu">
 						<Link to="/" target="_blank" className="resume-link">
 							Get {"//"} Resume
 						</Link>
 					</p>
-				</div>
-				<div className="hero-footer-tags">
+				</li>
+				<li className="hero-footer-tags">
 					<p className="menu">Light Mode: ON</p>
-				</div>
-			</footer>
+				</li>
+			</ul>
 		</section>
 	);
 }
