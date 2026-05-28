@@ -19,7 +19,7 @@ function Home() {
 			<Transition />
 
 			<div className="page home-page">
-				<Nav />
+				<Nav toggleOption />
 				<NavOverlay />
 				<Hero />
 				<HeroImageHolder />
