@@ -12,7 +12,7 @@ function Footer() {
 					<img src="/logo512.png" alt="" />
 					<img src="/logo512.png" alt="" />
 				</li>
-				<li className="footer-header">Ram Prasad</li>
+				<h1 className="footer-header">Ram Prasad</h1>
 				<ul className="footer-row">
 					<li className="footer-col">
 						<p>Explore</p>
