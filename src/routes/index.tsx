@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import About from "#/components/About.tsx";
 import Hero from "#/components/Hero.tsx";
 import HeroImageHolder from "#/components/HeroImageHolder.tsx";
 import Nav from "#/components/Nav.tsx";
@@ -17,6 +18,7 @@ function Home() {
 				<NavOverlay />
 				<Hero />
 				<HeroImageHolder />
+				<About />
 			</div>
 		</div>
 	);

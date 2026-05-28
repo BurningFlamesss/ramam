@@ -1,6 +1,7 @@
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import { createRootRoute, HeadContent, Scripts } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
+import aboutCss from "../styles/about.css?url"
 import heroCss from "../styles/hero.css?url"
 import menuCss from "../styles/menu.css?url"
 import appCss from '../styles.css?url'
@@ -31,6 +32,10 @@ export const Route = createRootRoute({
       {
         rel: 'stylesheet',
         href: heroCss,
+      },
+      {
+        rel: 'stylesheet',
+        href: aboutCss,
       },
     ],
   }),

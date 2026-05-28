@@ -1,0 +1,46 @@
+.about-hero {
+    position: relative;
+    width: 100vw;
+    height: 100svh;
+    padding: 8em 2em 6em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--foreground);
+    overflow: hidden;
+}
+
+.about-hero .about-hero-header {
+    text-align: center;
+}
+
+.about-hero .about-hero-header h1 {
+    font-size: 7.5rem;
+}
+
+.about-hero .about-hero-bio {
+    text-align: center;
+    width: 50%;
+}
+
+.about-hero .about-hero-portrait {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    width: 15%;
+    aspect-ratio: 5/7;
+    border-radius: 1em;
+    overflow: hidden;
+    opacity: 75%;
+    border: 0.25em solid var(--accent);
+    outline: 0.25em solid var(--accent-foreground);
+}
+
+.about-hero .about-hero-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
