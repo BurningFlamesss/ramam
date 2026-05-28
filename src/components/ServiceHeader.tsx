@@ -1,7 +1,7 @@
 function ServiceHeader() {
 	return (
-        <section className="service-header">
-            <div className="section-header content">
+        <section className="services-header">
+            <div className="services-header-content">
                 <div className="services-profile-icon">
                     <img src="/images/portrait.jpg" alt="" />
                 </div>
