@@ -8,6 +8,7 @@ import NavOverlay from "#/components/NavOverlay.tsx";
 import ServiceHeader from "#/components/ServiceHeader.tsx";
 import Transition from "#/components/Transition.tsx";
 import Services from "#/components/Services.tsx";
+import Contact from "#/components/Contact.tsx";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -25,6 +26,7 @@ function Home() {
 				<Featured />
 				<ServiceHeader />
 				<Services />
+				<Contact />
 			</div>
 		</div>
 	);
