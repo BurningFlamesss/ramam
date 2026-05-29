@@ -1,0 +1,70 @@
+.contact {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    z-index: 2;
+}
+
+.contact-card-header-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-card-header-main h1 {
+    text-transform: uppercase;
+    font-family: "Rader";
+    font-style: italic;
+    line-height: 0.95;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--foreground);
+}
+
+.contact-card-header-main p {
+    font-family: "Formula Narrow";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.125;
+    color: var(--foreground);
+    max-width: 90%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.contact-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.contact-info-item .label {
+    text-transform: uppercase;
+    font-family: "Supply Mono";
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.125;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    width: max-content;
+    background-color: var(--foreground);
+    color: var(--background);
+}
+

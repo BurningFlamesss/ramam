@@ -2,6 +2,7 @@ import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import aboutCss from "../styles/about.css?url";
+import contactCss from "../styles/contact.css?url"
 import footerCss from "../styles/footer.css?url";
 import heroCss from "../styles/hero.css?url";
 import menuCss from "../styles/menu.css?url";
@@ -41,6 +42,10 @@ export const Route = createRootRoute({
 			{
 				rel: "stylesheet",
 				href: footerCss,
+			},
+			{
+				rel: "stylesheet",
+				href: contactCss,
 			},
 		],
 	}),

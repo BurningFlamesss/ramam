@@ -62,7 +62,7 @@ function ContactPage() {
 										placeholder="Your first name"
 										required
 									/>
-									<label htmlFor="firstName">First Name</label>
+									<label className="label" htmlFor="firstName">First Name</label>
 								</div>
 								<div className="form-group">
 									<input
@@ -72,7 +72,7 @@ function ContactPage() {
 										placeholder="Your last name"
 										required
 									/>
-									<label htmlFor="lastName">Last Name</label>
+									<label className="label" htmlFor="lastName">Last Name</label>
 								</div>
 							</div>
 							<div className="form-row">
@@ -84,7 +84,7 @@ function ContactPage() {
 										placeholder="your@gmail.com"
 										required
 									/>
-									<label htmlFor="email">Email Address</label>
+									<label className="label" htmlFor="email">Email Address</label>
 								</div>
 								<div className="form-group">
 									<input
@@ -94,7 +94,7 @@ function ContactPage() {
 										placeholder="9800000000"
 										required
 									/>
-									<label htmlFor="phone">Phone Number</label>
+									<label className="label" htmlFor="phone">Phone Number</label>
 								</div>
 							</div>
 							<div className="form-group full-width">
@@ -104,11 +104,11 @@ function ContactPage() {
 									<option value="leadership">Leadership</option>
 									<option value="other">Other</option>
 								</select>
-								<label htmlFor="projectType">Project Type</label>
+								<label className="label" htmlFor="projectType">Project Type</label>
 							</div>
 							<div className="form-group full-width">
 								<textarea name="message" id="message" placeholder="Tell me about your projects, idea, and vision" required></textarea>
-								<label htmlFor="message">Project Details</label>
+								<label className="label" htmlFor="message">Project Details</label>
 							</div>
 							<button type="submit" className="submit-btn">
 								Send Message
